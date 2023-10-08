@@ -1,0 +1,93 @@
+#include<iostream>
+#include<climits>
+using namespace std;
+class operations 
+{
+    
+
+
+    public:
+        int a , b ;
+        int addition(int a, int b);
+        int subtraction(int a, int b);
+        int multipliclation(int a, int b);
+        int division (int a, int b);
+        int modulus (int a, int b);
+        int greatestNmber(int a,int b);
+        int OddEven(int n );
+};
+
+int operations :: addition(int c , int d )
+{
+    return c+d ;
+}
+
+
+int operations :: subtraction(int c , int d )
+{
+    return c-d ;
+}
+
+
+int operations :: multipliclation(int c , int d )
+{
+    return c*d ;
+}
+
+
+int operations :: division(int c , int d )
+{
+    return c/d ;
+}
+
+
+int operations ::modulus(int c , int d )
+{
+    return c%d ;
+}
+
+
+int operations :: greatestNmber(int c , int d )
+{
+   
+  if (c>d)
+  {
+    return c;
+    
+  }
+ 
+  return d;
+}
+
+int operations :: OddEven(int n)
+{
+    if (n%2==0)
+    {
+        cout<<"its an even number number "<<endl;
+    }
+    else 
+    {
+           cout<<"its an odd number number "<<endl;
+    }
+}
+
+int main ()
+{
+    int x , y ;
+    cout<<"enter the values of x and  y : ";
+    cin>> x>> y ;
+    
+  operations  z;
+cout<<"the addition of the two numbers is :"<<z. addition(x,y)<<endl;
+cout<<"the subtraction of the two numbers is :"<<z. subtraction(x,y)<<endl;
+cout<<"the multiplication of the two numbers is :"<<z.multipliclation(x,y)<<endl;
+cout<<"the division of the two numbers is :"<<z. division (x,y)<<endl;
+cout<<"the modulus  of the two numbers is :"<<z.  modulus (x,y)<<endl;
+cout<<"the the greatest number between the  two numbers is :"<<z. greatestNmber (x,y)<<endl;
+cout<<"for x : ";
+z.OddEven(x);
+cout<<"for y : ";
+z.OddEven(y);
+return 0;
+
+}
